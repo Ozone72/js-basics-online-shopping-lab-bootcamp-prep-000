@@ -36,6 +36,15 @@ function viewCart() {
   if(itemsCosts.length === 1){
     return console.log(`In your cart, you have ${itemsCosts}.`)
   }
+  else if(itemsCosts.length === 2){
+    itemsCosts = itemsCosts.join(" and ")
+    return console.log(`In your cart, you have ${itemsCosts}.`)
+  }
+  else{
+    itemsCosts[cart.length-1] = " and ".concat(itemsCosts[cart.length-1])
+    itemsCosts = itemsCosts.join(", ")
+  }
+  }
 
 }
 viewCart();
