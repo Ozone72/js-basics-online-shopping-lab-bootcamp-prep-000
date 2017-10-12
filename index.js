@@ -93,5 +93,6 @@ function placeOrder(cardNumber) {
   }
 
 }
-placeOrder(345687487)
+//placeOrder(345687487)
 placeOrder()
+console.log(cart)
