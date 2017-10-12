@@ -27,6 +27,7 @@ function viewCart() {
   let itemsCosts = [] //new array for items + costs
   for (let i = 0; i < cart.length; i++) {
     let cartItem = cart[i] //on each iteration of the loop, the cart[index] is assigned to itemsCosts
+    debugger
     let cartItemKey = Object.keys(cartItem)[0] //cartItem stores the key of the object at cart[i][0], etc...
     let cartItemValue = cartItem[cartItemKey] //assigns value to key
     itemsCosts.push(`${cartItem} at $${cartItemValue}`)
