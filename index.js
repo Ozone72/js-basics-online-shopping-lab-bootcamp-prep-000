@@ -58,6 +58,7 @@ function total() {
   }
   return sum
 }
+total()
 
 function removeFromCart(item) {
   // write your code here
