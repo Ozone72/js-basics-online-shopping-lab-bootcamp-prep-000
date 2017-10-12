@@ -83,14 +83,15 @@ function removeFromCart(item){
 //console.log(removeFromCart("piebald"))
 
 function placeOrder(cardNumber) {
-  const cartTotal = total();
-  if(!cardNumber){
+  const cartTotal = total(); //sets to current cart total
+  if(!cardNumber){ //if there is no card print:
     console.log("Sorry, we don't have a credit card on file for you.")
   }
-  else{
+  else{ //else, print string literal with cartTotal and cardNumber
     console.log(`Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`)
+    return cart=[] //returns an empty cart
   }
-  return cart=[]
+  
 }
 placeOrder(345687487)
 placeOrder()
