@@ -83,6 +83,8 @@ function removeFromCart(item){
 //console.log(removeFromCart("piebald"))
 
 function placeOrder(cardNumber) {
+  const cartTotal = total();
+  const cardNumber = Math.floor(Math.random() * 100000000);
   if(!cardNumber){
     console.log("Sorry, we don't have a credit card on file for you.")
   }
