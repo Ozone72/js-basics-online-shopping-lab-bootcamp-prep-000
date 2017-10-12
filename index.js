@@ -16,9 +16,9 @@ function addToCart(item) {
   return cart
 }
 
-addToCart(radish)
-addToCart(peanut butter)
-addToCart(shame remover)
+addToCart('radish')
+addToCart('peanut butter');
+addToCart('shame remover')
 
 function viewCart() {
   if (!cart.length){ //if cart length is 0 or FALSE, return empty message
