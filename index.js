@@ -47,9 +47,10 @@ function viewCart() {
   }
 }
 viewCart();
+console.log(cart)
 
 function total() {
-  
+
 }
 
 function removeFromCart(item) {
