@@ -66,7 +66,9 @@ function removeFromCart(item){
   for (let i = 0, len = cart.length; i < len; i++){ //loop to iterate through cart items. set len to cart.length so we can decrease length as we
     if(cart[i].hasOwnProperty(item)) { //if prop "item" is in cart[i] object,
       inCart = true; //change flag to true
-      cart = cart.slice(0, i).concat(cart.slice(i + 1)); //set cart equal to 
+      console.log(cart.slice(0,i))
+      console.log(cart.slice(i+1))
+      cart = cart.slice(0, i).concat(cart.slice(i + 1)); //set cart equal to
       //len--;
     }
   }
