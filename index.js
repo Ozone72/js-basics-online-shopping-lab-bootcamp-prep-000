@@ -22,7 +22,7 @@ function addToCart(item) {
 
 function viewCart() {
   if (!cart.length){ //if cart length is 0 or FALSE, return empty message
-    return console.log("Your shopping cat is empty.");
+    console.log("Your shopping cat is empty.");
   }
   let itemsCosts = [] //new array for items + costs
   for (let i = 0; i < cart.length; i++) {
