@@ -92,7 +92,7 @@ function placeOrder(cardNumber) {
   }
   return cart=[] //returns an empty cart
 }
-console.log(getCart())
+console.log(getCart().cart[0])
 //placeOrder(345687487)
 placeOrder()
 console.log(getCart())
