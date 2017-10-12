@@ -69,7 +69,7 @@ function removeFromCart(item){
       console.log(cart.slice(0,i))
       console.log(cart.slice(i+1))
       cart = cart.slice(0, i).concat(cart.slice(i + 1)); //set cart equal to
-      //len--;
+      len--;
     }
   }
 
