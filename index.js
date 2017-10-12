@@ -92,6 +92,7 @@ function placeOrder(cardNumber) {
   }
   return cart=[] //returns an empty cart
 }
+getCart()
 //placeOrder(345687487)
 placeOrder()
 //placeOrder(123456789)
