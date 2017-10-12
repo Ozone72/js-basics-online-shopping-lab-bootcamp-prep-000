@@ -47,7 +47,7 @@ function viewCart() {
   }
 }
 viewCart();
-console.log(cart)
+//console.log(cart)
 
 function total() {
   let sum = 0
