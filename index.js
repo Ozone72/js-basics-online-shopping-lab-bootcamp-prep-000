@@ -60,10 +60,10 @@ function total() {
 }
 //console.log(total())
 
-function removeFromCart(item) {
+function removeFromCart(item){
   let inCart = false;
   //console.log(cart[0].hasOwnProperty(item))
-  for (let i = 0, len = cart.length; i < len; i++) {
+  for (let i = 0, len = cart.length; i < len; i++){
     if(cart[i].hasOwnProperty(item)) {
       inCart = true;
       cart = cart.slice(0, i).concat(cart.slice(i + 1));
@@ -71,10 +71,9 @@ function removeFromCart(item) {
     }
   }
 
-  if (!inCart) {
+  if(!inCart){
     console.log("That item is not in your cart.");
   }
-
   return cart;
 }
 removeFromCart("radish")
