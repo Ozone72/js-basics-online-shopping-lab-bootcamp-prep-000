@@ -16,7 +16,7 @@ function addToCart(item) {
   return cart
 }
 
-//addToCart('radish')
+addToCart('radish')
 //addToCart('peanut butter');
 //addToCart('shame remover')
 
