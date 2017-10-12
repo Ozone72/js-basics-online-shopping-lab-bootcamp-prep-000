@@ -10,14 +10,18 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  const price = Math.floor(Math.random()*100)+1;
+  const price = Math.floor(Math.random()*100)+1
   cart.push({[item]:price});
-  console.log(`{item} has been added to your cart.`);
-  return cart;
+  console.log(`{item} has been added to your cart.`)
+  return cart
 }
 
 function viewCart() {
-  // write your code here
+  const len = cart.length
+  if (!len){
+    return console.log("Your shopping cat is empty.")
+  }
+  let itemsCosts = []
 }
 
 function total() {
