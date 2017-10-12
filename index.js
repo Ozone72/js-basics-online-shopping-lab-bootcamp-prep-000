@@ -16,6 +16,10 @@ function addToCart(item) {
   return cart
 }
 
+addToCart("radish")
+addToCart("peanut butter")
+addToCart("shame remover")
+
 function viewCart() {
   if (!cart.length){ //if cart length is 0 or FALSE, return empty message
     return console.log("Your shopping cat is empty.")
@@ -31,6 +35,7 @@ function viewCart() {
 
 }
 viewCart();
+
 function total() {
   // write your code here
 }
@@ -42,3 +47,4 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 }
+
