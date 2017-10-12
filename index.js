@@ -32,7 +32,7 @@ function viewCart() {
     itemsCosts.push(`${cartItem} at $${cartItemValue}`)
   }
   console.log(itemsCosts);
-  if(itemsCosts === 1){
+  if(itemsCosts.length === 1){
     return console.log(`In your cart, you have ${itemsCosts}.`)
   }
 
