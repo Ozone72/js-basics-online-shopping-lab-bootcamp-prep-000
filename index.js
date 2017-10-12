@@ -30,7 +30,7 @@ function viewCart() {
   console.log(itemsCosts);
 
 }
-
+viewCart();
 function total() {
   // write your code here
 }
