@@ -91,3 +91,4 @@ function placeOrder(cardNumber) {
   }
   return cart=[]
 }
+placeOrder(3456874875)
