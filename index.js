@@ -52,7 +52,7 @@ viewCart();
 function total() {
   let sum = 0
   for (let i = 0; i < cart.length; i++) {
-    for (let item in cart) {
+    for (let item in cart[i]) {
       sum+=cart[i][item]
     }
   }
