@@ -95,5 +95,6 @@ function placeOrder(cardNumber) {
 console.log(getCart())
 //placeOrder(345687487)
 placeOrder()
+console.log(getCart())
 //placeOrder(123456789)
 //console.log(cart)
