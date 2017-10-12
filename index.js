@@ -18,7 +18,7 @@ function addToCart(item) {
 
 function viewCart() {
   const len = cart.length
-  if (!len){
+  if (!cart.length){
     return console.log("Your shopping cat is empty.")
   }
   let itemsCosts = []
