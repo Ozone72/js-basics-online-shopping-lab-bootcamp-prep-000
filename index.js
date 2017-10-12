@@ -89,11 +89,10 @@ function placeOrder(cardNumber) {
   }
   else{ //else, print string literal with cartTotal and cardNumber
     console.log(`Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`)
-    return cart=[] //returns an empty cart
   }
-
+  return cart=[] //returns an empty cart
 }
 //placeOrder(345687487)
-//placeOrder()
+placeOrder()
 //placeOrder(123456789)
 //console.log(cart)
