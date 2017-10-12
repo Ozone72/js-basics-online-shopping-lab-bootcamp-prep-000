@@ -206,6 +206,14 @@ describe("placeOrder()", function() {
     );
   });
 
+  it("doesn't empty the cart if a credit card number is not provided", function() {
+    addToCart("apples");
+
+    placeOrder();
+
+    expect(getCart()).toEqual(cart[0]);
+  });
+
   it("empties the cart", function() {
     addToCart("apples");
 
