@@ -62,20 +62,20 @@ function total() {
 
 function removeFromCart(item) {
   let inCart = false;
-  console.log(cart[0].hasOwnProperty(item))
-  /*for (let i = 0; i < cart.length; i++) {
-    if (cart[i].hasOwnProperty(item)) {
-      itemInCart = true;
+  //console.log(cart[0].hasOwnProperty(item))
+  for (let i = 0; i < cart.length; i++) {
+    if(cart[i].hasOwnProperty(item)) {
+      inCart = true;
       cart = cart.slice(0, i).concat(cart.slice(i + 1));
       l--;
     }
   }
 
-  if (!itemInCart) {
+  if (!inCart) {
     console.log("That item is not in your cart.");
   }
 
-  return cart;*/
+  return cart;
 }
 removeFromCart("radish")
 
