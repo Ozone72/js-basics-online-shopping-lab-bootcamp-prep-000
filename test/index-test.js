@@ -193,6 +193,14 @@ describe("placeOrder()", function() {
     );
   });
 
+  it("doesn't empty the cart if there is no credit card on file.", function() {
+    addToCart("apples");
+
+    placeOrder();
+
+    expect(getCart()).toEqual([]);
+  });
+
   it("places an order when a credit card number is provided", function() {
     addToCart("zucchini");
 
@@ -211,6 +219,6 @@ describe("placeOrder()", function() {
 
     placeOrder(12345678);
 
-    expect(getCart()).toEqual([]);
+    expect(getCart()).toEqual([cart]);
   });
 });
