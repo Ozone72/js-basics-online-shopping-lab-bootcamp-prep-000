@@ -68,7 +68,7 @@ function removeFromCart(item){
       inCart = true; //change flag to true if found
       //console.log(cart.slice(0,i))
       //console.log(cart.slice(i+1))
-      cart = cart.slice(0, i).concat(cart.slice(i + 1)); //set cart equal to 
+      cart = cart.slice(0, i).concat(cart.slice(i + 1)); //set cart equal to
       console.log(cart)
       len--;
     }
@@ -79,11 +79,9 @@ function removeFromCart(item){
   }
   return cart;
 }
-removeFromCart("peanut butter")
-removeFromCart("peanut butter")
+//removeFromCart("peanut butter")
 //console.log(removeFromCart("piebald"))
 
 function placeOrder(cardNumber) {
-  // write your code here
-
+  
 }
