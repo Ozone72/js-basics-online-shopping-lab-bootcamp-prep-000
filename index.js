@@ -62,6 +62,7 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  return item
 }
 
 function placeOrder(cardNumber) {
