@@ -211,7 +211,7 @@ describe("placeOrder()", function() {
 
     placeOrder();
 
-    expect(getCart()).toEqual(cart[0]);
+    expect(getCart()).toEqual(cart);
   });
 
   it("empties the cart", function() {
