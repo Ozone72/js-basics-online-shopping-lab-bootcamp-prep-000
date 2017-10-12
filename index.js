@@ -17,8 +17,8 @@ function addToCart(item) {
 }
 
 addToCart('radish')
-//addToCart('peanut butter');
-//addToCart('shame remover')
+addToCart('peanut butter');
+addToCart('shame remover')
 
 function viewCart() {
   if (!cart.length){ //if cart length is 0 or FALSE, return empty message
