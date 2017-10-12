@@ -74,7 +74,7 @@ function removeFromCart(item){
   }
 
   if(!inCart){ //if flag remains false, returns the below
-    console.log("That item is not in your cart.");
+    return console.log("That item is not in your cart.");
   }
   return cart;
 }
