@@ -17,11 +17,15 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  const len = cart.length
-  if (!cart.length){
+  if (!cart.length){ //if cart length is 0 or FALSE, return empty message
     return console.log("Your shopping cat is empty.")
   }
-  let itemsCosts = []
+  let itemsCosts = [] //new array for items + costs
+  for (let i = 0; i < cart.length; i++) {
+    array[i]
+  }
+  
+  
 }
 
 function total() {
