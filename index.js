@@ -31,6 +31,7 @@ function viewCart() {
     let cartItemKey = Object.keys(cartItem)[0] //cartItem stores the key of the object at cart[i][0], etc...
     console.log(cartItemKey)
     let cartItemValue = cartItem[cartItemKey] //assigns value to key
+    console.log('cartItem = ${cartItem} /n cartItemKey = ${cartItemKey} /n cartItemValue = ${cartItemValue}')
     itemsCosts.push(`${cartItem} at $${cartItemValue}`)
   }
   console.log(itemsCosts);
