@@ -219,6 +219,6 @@ describe("placeOrder()", function() {
 
     placeOrder(12345678);
 
-    expect(getCart()).toEqual([cart]);
+    expect(getCart()).toEqual(cart);
   });
 });
