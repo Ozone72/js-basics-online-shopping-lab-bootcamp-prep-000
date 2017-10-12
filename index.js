@@ -76,7 +76,7 @@ function removeFromCart(item){
   }
   return cart;
 }
-removeFromCart("radish")
+console.log(removeFromCart("radish"))
 
 function placeOrder(cardNumber) {
   // write your code here
