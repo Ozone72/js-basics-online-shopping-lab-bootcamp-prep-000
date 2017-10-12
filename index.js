@@ -25,7 +25,7 @@ function viewCart() {
     return console.log("Your shopping cart is empty.");
   }
   let itemsCosts = [] //new array for items + costs
-  for (let i = 0; i < cart.length; i++) { //iterates length of the cart and for each 
+  for (let i = 0; i < cart.length; i++) { //iterates length of the cart and for each
     let cartItem = cart[i] //on each iteration of the loop, the cart[index] is assigned to itemsCosts
     let cartItemKey = Object.keys(cartItem)[0] //cartItem stores the key of the object at cart[i][0], etc...
     let cartItemValue = cartItem[cartItemKey] //assigns value to key
@@ -34,22 +34,22 @@ function viewCart() {
   }
   //console.log(itemsCosts);
   if(itemsCosts.length === 1){
-    return console.log(`In your cart, you have ${itemsCosts}.`) //returns this string 
+    return console.log(`In your cart, you have ${itemsCosts}.`) //returns this string for single item
   }
   else if(itemsCosts.length === 2){
-    itemsCosts = itemsCosts.join(" and ")
+    itemsCosts = itemsCosts.join(" and ") //itemsCosts elements with " and "
     return console.log(`In your cart, you have ${itemsCosts}.`)
   }
   else{
-    itemsCosts[cart.length-1] = "and ".concat(itemsCosts[cart.length-1])
-    itemsCosts = itemsCosts.join(", ")
+    itemsCosts[cart.length-1] = "and ".concat(itemsCosts[cart.length-1]) //up until 2nd to last element, joins with "and " as delimiter
+    itemsCosts = itemsCosts.join(", ") //as last joins using a comma
     return console.log(`In your cart, you have ${itemsCosts}.`)
   }
 }
 viewCart();
 
 function total() {
-  // write your code here
+  
 }
 
 function removeFromCart(item) {
