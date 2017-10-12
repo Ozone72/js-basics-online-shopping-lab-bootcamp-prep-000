@@ -63,11 +63,11 @@ function total() {
 function removeFromCart(item){
   let inCart = false;
   //console.log(cart[0].hasOwnProperty(item))
-  for (let i = 0, len = cart.length; i < len; i++){
-    if(cart[i].hasOwnProperty(item)) {
-      inCart = true;
+  for (let i = 0, len = cart.length; i < len; i++){ //loop to iterate through cart items. set len to cart.length so we can decrease length as we
+    if(cart[i].hasOwnProperty(item)) { //if prop "item" is in cart[i] object, indicate it is in the cart, and
+      //inCart = true;
       cart = cart.slice(0, i).concat(cart.slice(i + 1));
-      len--;
+      //len--;
     }
   }
 
