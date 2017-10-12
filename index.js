@@ -41,7 +41,7 @@ function viewCart() {
     return console.log(`In your cart, you have ${itemsCosts}.`)
   }
   else{
-    itemsCosts[cart.length-1] = " and ".concat(itemsCosts[cart.length-1])
+    itemsCosts[cart.length-1] = "and ".concat(itemsCosts[cart.length-1])
     itemsCosts = itemsCosts.join(", ")
     return console.log(`In your cart, you have ${itemsCosts}.`)
   }
